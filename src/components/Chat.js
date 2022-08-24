@@ -14,8 +14,10 @@ function Chat(){
     }, [])
     // .limit()
     return(
-        <div>
+        <div className='body'>
+        <div className='head'>
         <Signout />
+        </div>
         <div className='msgs'>
         {messages.map(({id, text, photoURL, uid}) => (
             <div>
