@@ -12,7 +12,7 @@ function Chat(){
             setMessages(snapshot.docs.map(doc => doc.data()))
         })
     }, [])
-    // .limit(20)
+    // .limit()
     return(
         <div>
         <Signout />
